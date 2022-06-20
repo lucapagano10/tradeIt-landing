@@ -1,0 +1,24 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Symbol:</strong>
+  <%= @trade.symbol %>
+</p>
+
+<p>
+  <strong>Entry:</strong>
+  <%= @trade.entry %>
+</p>
+
+<p>
+  <strong>Stoploss:</strong>
+  <%= @trade.stopLoss %>
+</p>
+
+<p>
+  <strong>Targetprofit:</strong>
+  <%= @trade.targetProfit %>
+</p>
+
+<%= link_to 'Edit', edit_trade_path(@trade) %> |
+<%= link_to 'Back', trades_path %>

@@ -1,0 +1,13 @@
+# Read about fixtures at https://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  symbol: MyString
+  entry: 1
+  stopLoss: 1
+  targetProfit: 1
+
+two:
+  symbol: MyString
+  entry: 1
+  stopLoss: 1
+  targetProfit: 1

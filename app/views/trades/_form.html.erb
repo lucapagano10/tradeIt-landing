@@ -1,0 +1,17 @@
+
+<%= simple_form_for(@trade) do |f| %>
+  <%= f.error_notification %>
+  <%= f.error_notification message: f.object.errors[:base].to_sentence if f.object.errors[:base].present? %>
+
+  <div class="form-inputs">
+    <%= f.input :symbol %>
+    <%= f.input :long_short, as: :select, collection: [['Long',true], ['Short',false]], required: true %>
+    <%= f.input :entry %>
+    <%= f.input :stopLoss %>
+    <%= f.input :targetProfit %>
+  </div>
+
+  <div class="form-actions">
+    <%= f.button :submit %>
+  </div>
+<% end %>
