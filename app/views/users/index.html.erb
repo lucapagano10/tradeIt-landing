@@ -1,35 +1,28 @@
-<div class="container">
+<div class="container pl-6  pt-3 pb-4">
   <h2>Lista de traders</h2>
 </div>
-<div class="container">
+<div class="container d-flex justify-content-center">
   <div class="row">
     <% @users.each do |user| %>
-    <div class="col">
-      <div class="card" style="width: 30rem;">
-        <div class="d-flex p-3">
-          <%= gravatar_image_tag(user.email, size: 64, alt: user.username)%>
-          <h5 class="card-title p-4"><%= user.username %> </h5>
-        </div>
-        <div class="d-flex">
-          <div class="card-body">
-            <h5 style="color:grey;">Trades</h5>
+      <div class="col px-6">
+        <div class="card" style="width: 25rem;">
 
-            <% @trades.each do |trade| %>
-              <%=  %>
-            <% end %>
-
-
-
-            <a href="#" class="btn btn-primary">Go somewhere</a>
+          <div class="d-flex p-3 justify-content-between">
+            <figure class="image is-64x64">
+              <img class="is-rounded" src="https://source.unsplash.com/iFgRcqHznqg/96x96" alt="Placeholder image">
+            </figure>
+            <h5 class="card-title p-4"><%= user.username %> </h5>
+            <%= link_to "Ver", user_session_path, class: "button", style: "text-decoration: none;" %>
+          </div>
+          <div class="d-flex">
+            <div class="card-body d-flex">
+              <h5 style="color:grey;">Trades:  </h5>
+              <h5 class="ml-3"> <%= user.trades.count %> </h5>
+            </div>
           </div>
         </div>
       </div>
-      <% end %>
-
-      </div>
-    </div>
-    <div class="col">
-
-    </div>
+    <% end %>
   </div>
 </div>
+
