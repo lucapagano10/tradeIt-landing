@@ -5,6 +5,8 @@ class UsersController < ApplicationController
 
   def index
     @users = User.all
+    @user = current_user
+    @trades = @user.trades
   end
 
   def show

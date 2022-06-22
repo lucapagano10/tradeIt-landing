@@ -3,33 +3,37 @@
     <div class="container ">
       <div class="d-flex justify-content-around" >
         <div class="back">
-          <h1 style="font-weight: bolder;">Sumate a TradeIt</h1>
+          <h1 class= "title pt-3">Sumate a TradeIt</h1>
           <br><br>
-          <div>
-          <h4 class="d-flex justify-content-start">
-          <span><%= image_tag "money-bag.png", alt: "Earnings", width: 40 %> </span>
-            Copiá a tus traders favoritos
-          </h4>
-          <br><br>
-          <h4 class="d-flex justify-content-start">
-          <span><%= image_tag "clock.png", alt: "Earnings", width: 30 %> </span>
-            Ahorrá tiempo automatizando tus inversiones
-          </h4>
-          <br><br>
-            <h4 class="d-flex justify-content-start">
+          <div class="tile is-parent">
+            <div class="tile is-child box m-4 p-4">
+              <div class="level-left">
+                <span><%= image_tag "money-bag.png", alt: "Earnings", width: 40 %> </span>
+                <h4 class="ml-3">Copiá a tus traders favoritos</h4>
+              </div>
+              <br><br>
+              <div class="level-left">
+              <span><%= image_tag "clock.png", alt: "Earnings", width: 30 %> </span>
+               <h4 class="ml-3">Ahorrá tiempo automatizando tus inversiones </h4>
+              </div>
+              <br><br>
+              <div class="level-left">
               <span><%= image_tag "social-media.png", alt: "Earnings", width: 30 %> </span>
-              Aprendé en comunidad
-            </h4>
+              <h4 class="ml-3">Aprendé en comunidad</h4>
+              </div>
+            </div>
           </div>
         </div>
-        <%= image_tag "astronaut.png", alt: "Astronaut", width: 500, class:"d-flex justify-content-end" %>
+        <%= image_tag "astronaut.png", alt: "Astronaut", width: 500, class:"d-flex justify-content-end", class:"pt-3" %>
       </div>
     </div>
   </div>
-  <br><br>
   <div class="container">
-    <h4 class="text-center" style="font-style:oblique;">Elegí tu riesgo y explorá traders</h4>
-    <br>
+    <section class="hero is-small is-link">
+  <div class="hero-body">
+    <p class="title">
+      Elegí tu riesgo y explorá traders
+    </p>
     <div class="card-columns">
       <div class="card shadow p-1 img-fluid" style="width:360px; height:250px;">
         <div class="card-header text-center">
@@ -51,5 +55,7 @@
       </div>
     </div>
   </div>
-  <br><br><br>
 </div>
+  </div>
+</section>
+
